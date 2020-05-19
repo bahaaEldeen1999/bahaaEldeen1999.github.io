@@ -1,0 +1,290 @@
+*{
+    transition: all ease-in-out .2s;
+}
+:root{
+    --main-color: #3498db;
+    --light-blue: #F3F8FF;
+}
+
+.main-color{
+    color: var(--main-color);
+}
+
+.btn-main{
+    color: var(--main-color);
+    border: 1px solid  var(--main-color);
+    background: transparent;
+    text-align: center;
+    
+}
+.btn-main:hover{
+    color:white;
+   
+    background: var(--main-color);
+}
+
+a{
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+a:hover{
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+div{
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    
+}
+.text-intro{
+    padding: 20px;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#fullpage>div{
+    min-height: 100vh;
+}
+#intro{
+    background-color: #3498db;
+}
+#work{
+    padding-top: 30px;
+}
+#work h1{
+
+    text-align: center;
+}
+figcaption{
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+.spotify button{
+    border: 1px solid #1dd164;
+    min-width: 60px;
+    
+}
+.spotify button:hover{
+    background:  #1dd164;
+    min-width: 60px;
+    
+}
+.gallery-image a{
+    color: white;
+    position: static;
+}
+.col,body,html{
+    padding:0;
+}
+.sort button{
+    border: 1px solid #23a4b5;
+    min-width: 60px;
+    
+}
+.sort button:hover{
+    background:  #23a4b5;
+    min-width: 60px;
+    
+}
+.aeth button{
+    border: 1px solid #15A989;
+    min-width: 60px;
+    
+}
+.aeth button:hover{
+    background:  #15A989;
+    min-width: 60px;
+    
+}
+.arch button{
+    border: 1px solid white;
+    min-width: 60px;
+    
+}
+
+figure,figure img{
+    height: 100%;
+    width: 100%;
+}
+.gallery-image{
+    height: 100%;
+}
+
+figcaption{
+    background-color: rgba(0,0,0,.8) !important;
+}
+.cre button{
+    border: 1px solid #11749e;
+    min-width: 60px;
+    
+}
+.cre button:hover{
+    background:  #11749e;
+    min-width: 60px;
+    
+}
+.port1 button{
+    border: 1px solid #6f42c1;
+    min-width: 60px;
+    
+}
+.port1 button:hover{
+    background:  #6f42c1;
+    min-width: 60px;
+    
+}
+.port2 button{
+    border: 1px solid #39CA76;
+    min-width: 60px;
+    
+}
+.port2 button:hover{
+    background:  #39CA76;
+    min-width: 60px;
+    
+}
+.quiz button{
+    border: 1px solid #e67e22;
+    min-width: 60px;
+    
+}
+.quiz button:hover{
+    background:  #e67e22;
+    min-width: 60px;
+    
+}
+.huff button{
+    border: 1px solid #2980b9;
+    min-width: 60px;
+    
+}
+.huff button:hover{
+    background:  #2980b9;
+    min-width: 60px;
+    
+}
+.lz78 button{
+    border: 1px solid #1abc9c;
+    min-width: 60px;
+    
+}
+.lz78 button:hover{
+    background:  #1abc9c;
+    min-width: 60px;
+    
+}
+.roll button{
+    border: 1px solid #2ecc71;
+    min-width: 60px;
+    
+}
+.roll button:hover{
+    background:  #2ecc71;
+    min-width: 60px;
+    
+}
+.mongo button{
+    border: 1px solid #d35400;
+    min-width: 60px;
+    
+}
+.mongo button:hover{
+    background:  #d35400;
+    min-width: 60px;
+    
+}
+.agency button{
+    border: 1px solid #f1c40f;
+    min-width: 60px;
+    
+}
+.agency button:hover{
+    background:  #f1c40f;
+    min-width: 60px;
+    
+}
+.main-header{
+    color: white;
+    text-align: center;
+    padding:30px
+   
+}
+.skill{
+   padding: 20px;
+   text-align: center;
+   background-color: white;
+   border-radius: 20px 20px 10px 10px ;
+   min-height: 450px;
+  
+
+}
+.skill:hover{
+   box-shadow: 15px 10px rgba(39, 174, 96,.5);
+  
+
+}
+.skill-icon {
+   height: 250px;
+}
+.skill-icon img {
+   height: 100%;
+}
+#about .col-12{
+   padding: 30px;
+}
+.form-control{
+ 
+  background-color: white;
+  border-radius: 30px;
+   outline: none;
+   padding:10px;
+   border: 2px solid #f1c40f;
+}
+form{
+   color: white;
+   font-size: 1.5em;
+}
+label{
+   padding:10px
+}
+.btn-form{
+   color: white;
+   border: 1px solid #f1c40f;
+   font-size: 1.5em;
+
+}
+.btn-form:hover{
+   color: white;
+   background-color:  #f1c40f;
+  
+
+}
+.soc .col{
+
+text-align: center;
+}
+
+.icon-social i{
+font-size: 50px;
+opacity: .8;
+}
+.icon-social i:hover{
+
+  
+   opacity: 1;
+   transform: rotate(360deg);
+   transform: scale(1.2);
+   
+}
+footer{
+   text-align: center;
+   padding: 30px;
+   font-size: 2em;
+  
+}
