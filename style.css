@@ -49,6 +49,8 @@ img{
 }
 #fullpage>div{
     min-height: 100vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 #intro{
     background-color: #3498db;
