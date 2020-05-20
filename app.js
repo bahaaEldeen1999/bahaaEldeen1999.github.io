@@ -1,4 +1,4 @@
-//new Pageable("#fullpage");
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -8,9 +8,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene);
 
-$(".gallery-image").hover3d({
-	selector: ".gallery-image img"
-});
+
+
+let cols = document.querySelectorAll('.col')
+let headers = document.querySelectorAll('h1,h2,h3,.main-header,p')
+console.log(cols)
+for(let col of cols){
+    col.setAttribute('data-aos','zoom-in')
+}
+for(let h of headers){
+
+    h.setAttribute('data-aos','flip-up')
+}
+AOS.init({ once: true});

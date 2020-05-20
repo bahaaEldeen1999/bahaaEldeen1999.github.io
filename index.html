@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/pageable@latest/dist/pageable.min.css
-    ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="style.css">
     <title>bahaaEldeen</title>
     <style>
@@ -22,18 +22,24 @@
         color: var(--main-color);
      }
      button.navbar-toggler {
-  border-color: black;
+  border-color: #3498db;
 }
  span.navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 color: white;
 }
+body{
+    position: relative;
+}
+.active{
+    color: var(--main-color);
+}
     </style>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
 
             <div class="nav-div">
-                <nav class="navbar navbar-expand-lg fixed-top">
+                <nav class="navbar navbar-expand-lg fixed-top" id="navbar-example2">
                     <a class="navbar-brand main-color"  href="#intro" style="font-size: 1.5em;" >Bahaa</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon" style="color: black;"></span>
@@ -41,7 +47,7 @@ color: white;
                   
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                           <a class="nav-link" href="#intro">Top</a>
                         </li>
                         <li class="nav-item">
@@ -59,11 +65,11 @@ color: white;
                   </nav>
             </div>
             <div id="fullpage" >
-                <div data-anchor="Page 1" id="intro" class="center">
+                <div data-anchor="Page 1" id="intro" class="center"  data-aos="fade-in">
                         <div >
                             <div>
                                 <div class="row" style="background-color: white;padding: 20px;font-size: 2.5rem;">
-                                    <div class="col-12 col-md-8 col-sm-8 col-lg-8 col-xl-8">
+                                    <div class="col-12 col-md-8 col-sm-8 col-lg-8 col-xl-8 col" data-aos="slide-right">
                                         <div class="text-intro" >
                                             <h1> Hi, I am <span class="main-color" style="font-size: 1.6em;"> Bahaa </span> <br> Nice to meet you</h1>
                                             <h4>
@@ -348,7 +354,7 @@ color: white;
                     <h3 style="padding: 30px;text-align: center;" class="main-header">I am a computer engineering student, with passion to learn more about different web technologies, I am problem solving as well and I love low level programming, I am in a never ending journey of learning</h3>
                     <h2 class="main-header">My skills</h2>
                     <div class="row" tyle="padding-top:50px;padding-bottom: 50px;">
-                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-12 col">
                             <div class="skill">
 
                                 <div class="skill-icon">
@@ -360,7 +366,7 @@ color: white;
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4  col-xl-4 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-4  col-xl-4 col-md-4 col-sm-6 col-12 col">
                             <div class="skill">
 
                                 <div class="skill-icon">
@@ -372,7 +378,7 @@ color: white;
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-12 col">
                             <div class="skill">
 
                                 <div class="skill-icon">
@@ -384,7 +390,7 @@ color: white;
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-12 col">
                             <div class="skill">
 
                                 <div class="skill-icon">
@@ -396,7 +402,7 @@ color: white;
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4  col-xl-4 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-4  col-xl-4 col-md-4 col-sm-6 col-12 col">
                             <div class="skill">
 
                                 <div class="skill-icon">
@@ -408,7 +414,7 @@ color: white;
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4  col-xl-4 col-md-4 col-sm-6 col-12">
+                        <div class="col-lg-4  col-xl-4 col-md-4 col-sm-6 col-12 col">
                             <div class="skill">
 
                                 <div class="skill-icon">
@@ -492,9 +498,7 @@ color: white;
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js
-    "></script>
-    <script src="scripts/hover3d.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
