@@ -53,7 +53,7 @@ img{
     padding-bottom: 30px;
 }
 #intro{
-    background-color: #3498db;
+    
 }
 #work{
     padding-top: 30px;
@@ -67,14 +67,15 @@ figcaption{
     font-size: 1.5em;
     color: white;
 }
-.spotify button{
-    border: 1px solid #1dd164;
+#work button{
+    border: 1px solid var(--main-color);
     min-width: 60px;
     
 }
-.spotify button:hover{
-    background:  #1dd164;
+#work button:hover{
+    background:  var(--main-color);
     min-width: 60px;
+    color: black ;
     
 }
 .gallery-image a{
@@ -84,31 +85,7 @@ figcaption{
 .col,body,html{
     padding:0;
 }
-.sort button{
-    border: 1px solid #23a4b5;
-    min-width: 60px;
-    
-}
-.sort button:hover{
-    background:  #23a4b5;
-    min-width: 60px;
-    
-}
-.aeth button{
-    border: 1px solid #15A989;
-    min-width: 60px;
-    
-}
-.aeth button:hover{
-    background:  #15A989;
-    min-width: 60px;
-    
-}
-.arch button{
-    border: 1px solid white;
-    min-width: 60px;
-    
-}
+
 
 figure,figure img{
     height: 100%;
@@ -121,96 +98,7 @@ figure,figure img{
 figcaption{
     background-color: rgba(0,0,0,.8) !important;
 }
-.cre button{
-    border: 1px solid #11749e;
-    min-width: 60px;
-    
-}
-.cre button:hover{
-    background:  #11749e;
-    min-width: 60px;
-    
-}
-.port1 button{
-    border: 1px solid #6f42c1;
-    min-width: 60px;
-    
-}
-.port1 button:hover{
-    background:  #6f42c1;
-    min-width: 60px;
-    
-}
-.port2 button{
-    border: 1px solid #39CA76;
-    min-width: 60px;
-    
-}
-.port2 button:hover{
-    background:  #39CA76;
-    min-width: 60px;
-    
-}
-.quiz button{
-    border: 1px solid #e67e22;
-    min-width: 60px;
-    
-}
-.quiz button:hover{
-    background:  #e67e22;
-    min-width: 60px;
-    
-}
-.huff button{
-    border: 1px solid #2980b9;
-    min-width: 60px;
-    
-}
-.huff button:hover{
-    background:  #2980b9;
-    min-width: 60px;
-    
-}
-.lz78 button{
-    border: 1px solid #1abc9c;
-    min-width: 60px;
-    
-}
-.lz78 button:hover{
-    background:  #1abc9c;
-    min-width: 60px;
-    
-}
-.roll button{
-    border: 1px solid #2ecc71;
-    min-width: 60px;
-    
-}
-.roll button:hover{
-    background:  #2ecc71;
-    min-width: 60px;
-    
-}
-.mongo button{
-    border: 1px solid #d35400;
-    min-width: 60px;
-    
-}
-.mongo button:hover{
-    background:  #d35400;
-    min-width: 60px;
-    
-}
-.agency button{
-    border: 1px solid #f1c40f;
-    min-width: 60px;
-    
-}
-.agency button:hover{
-    background:  #f1c40f;
-    min-width: 60px;
-    
-}
+
 .main-header{
     color: white;
     text-align: center;
@@ -227,7 +115,7 @@ figcaption{
 
 }
 .skill:hover{
-   box-shadow: 15px 10px rgba(39, 174, 96,.5);
+   box-shadow: 5px 5px 10px white ;
   
 
 }
@@ -241,29 +129,25 @@ figcaption{
    padding: 30px;
 }
 .form-control{
- 
-  background-color: white;
+
   border-radius: 30px;
    outline: none;
    padding:10px;
-   border: 2px solid #f1c40f;
+   border: 2px solid var(--main-color);
 }
 form{
-   color: white;
    font-size: 30px;
    max-width: 600px;
 }
 
 .btn-form{
-   color: white;
-   border: 1px solid #f1c40f;
+   border: 1px solid var(--main-color);
    font-size: 30px;
 
 }
 .btn-form:hover{
-   color: white;
-   background-color:  #f1c40f;
-  
+   background-color:  var(--main-color);
+  color: white;
 
 }
 .soc .col{
@@ -298,4 +182,8 @@ footer{
     #contact .col{
         text-align: center;
     }
+}
+
+.soc{
+    background-color: white;
 }
