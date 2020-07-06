@@ -12,10 +12,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 let cols = document.querySelectorAll('.col')
-let headers = document.querySelectorAll('h1,h2,h3,.main-header,p')
-console.log(cols)
+let headers = document.querySelectorAll('h1,h2,h3,.main-header,p');
+let i =0;
 for(let col of cols){
-    col.setAttribute('data-aos','zoom-in')
+    if(i > 1) col.setAttribute('data-aos','zoom-in');
+    i++;
 }
 for(let h of headers){
 
