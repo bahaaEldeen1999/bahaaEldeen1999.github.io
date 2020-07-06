@@ -18,8 +18,10 @@ for(let col of cols){
     if(i > 1) col.setAttribute('data-aos','zoom-in');
     i++;
 }
+i=0;
 for(let h of headers){
 
-    h.setAttribute('data-aos','flip-up')
+   if(i > 1) h.setAttribute('data-aos','flip-up');
+    i++;
 }
 AOS.init({ once: true});
